@@ -6,7 +6,7 @@
 nav {
     background-color: #003F47;
     color: white;
-    padding: 30px 60px;
+    padding: 10px 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -60,4 +60,9 @@ div {
 .input-group-text {
     width: 1cm;
     text-align: center;
+}
+
+.btn {
+    margin-bottom: 1cm;
+    width: 5cm;
 }

@@ -17,7 +17,6 @@ const port = process.env.port;
 const ip = process.env.ip;
 
 let workorder;
-let saleorder;
 let drawing;
 
 app.get('/', (request, response) => {
@@ -25,13 +24,12 @@ app.get('/', (request, response) => {
 });
 
 app.post('/drawing', (request, response) => {
-    //{ workorder, saleorder, drawing } = request.body;
+    //{ workorder, drawing } = request.body;
     workorder = request.body.workorder;
-    saleorder = request.body.saleorder;
     drawing = request.body.drawing;
 
-    if ((workorder !== '' || saleorder !== '') && drawing !== 'Select drawing') {
-        let filename = `./data/${workorder}_${saleorder}_${drawing}.txt`;
+    if (workorder !== '' && drawing !== 'Select drawing') {
+        let filename = `./data/${workorder}.txt`;
 
         if (!fs.existsSync(filename)) {
             response.render(`drawings/${drawing}`, {
@@ -51,9 +49,9 @@ app.post('/drawing', (request, response) => {
 });
 
 app.post('/submit', (request, response) => {
-    if (typeof(workorder) !== 'undefined' || typeof(saleorder) !== 'undefined' || typeof(drawing) !== 'undefined') {
+    if (typeof(workorder) !== 'undefined' || typeof(drawing) !== 'undefined') {
         let jsonData = JSON.stringify(request.body);
-        fs.writeFileSync(`./data/${workorder}_${saleorder}_${drawing}.txt`, jsonData, (error) => {
+        fs.writeFileSync(`./data/${workorder}.txt`, jsonData, (error) => {
             if (error) {
                 console.log(error);
             }

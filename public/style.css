@@ -66,3 +66,14 @@ div {
     margin-bottom: 1cm;
     width: 5cm;
 }
+
+.box {
+    border: 1px solid #ddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col.box {
+    padding: 15px;
+ }

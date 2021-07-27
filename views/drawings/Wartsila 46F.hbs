@@ -42,7 +42,7 @@
             <div class="row g-2">
                 <div class="card" style="width: 20rem;">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Incoming Inside Diameter (blue line)</li>
+                        <li class="list-group-item">Wartsila 46F Ports Side</li>
                     </ul>
                 </div>
             </div>
@@ -67,16 +67,20 @@
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="C">C</span>
                                 <input type="text" class="form-control" id="in_C" name="in_C" value="{{data.in_C}}">
-                            </div>
+                            </div>  
+                        </div>
+                        <div class="card-header">
+                            Drop from liner landing to flame face
+                        </div>
+                        <div class="card-body">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="R">R</span>
-                                <input type="text" class="form-control" id="in_R" name="in_R" value="{{data.in_R}}">
-                            </div>                  
+                                <input type="text" class="form-control" id="in_D" name="in_D" value="{{data.in_D}}">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col box">
-                    <img src="/images/{{data.drawing}}_1.png" alt="Flowers in Chania" width="300">
+                    <img src="/images/{{data.drawing}}_1.png" alt="Flowers in Chania" width="220">
                 </div>
                 <div class="col">
                     <div class="card">
@@ -96,100 +100,14 @@
                                 <span class="input-group-text" id="C">C</span>
                                 <input type="text" class="form-control" id="out_C" name="out_C" value="{{data.out_C}}">
                             </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="R">R</span>
-                                <input type="text" class="form-control" id="out_R" name="out_R" value="{{data.out_R}}">
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mt-4">
-            <div class="row justify-content-center">
-                <div class="col">
-                    <div class="card">
                         <div class="card-header">
-                            Incoming Measurements
+                            Drop from liner landing to flame face
                         </div>
                         <div class="card-body">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="D">D</span>
-                                <input type="text" class="form-control" id="in_D" name="in_D" value="{{data.in_D}}">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="E">E</span>
-                                <input type="text" class="form-control" id="in_E" placeholder="(Diameter if Sleeved)" name="in_E" value="{{data.in_E}}">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="F">F</span>
-                                <input type="text" class="form-control" id="in_F" name="in_F" value="{{data.in_F}}">
-                            </div>                   
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="G">G</span>
-                                <input type="text" class="form-control" id="in_G" name="in_G" value="{{data.in_G}}">
-                            </div>     
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="H">H</span>
-                                <input type="text" class="form-control" id="in_H" name="in_H" value="{{data.in_H}}">
-                            </div>  
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="I">I</span>
-                                <input type="text" class="form-control" id="in_I" name="in_I" value="{{data.in_I}}">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="J">J</span>
-                                <input type="text" class="form-control" id="in_J" name="in_J" value="{{data.in_J}}">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="K">K</span>
-                                <input type="text" class="form-control" id="in_K" name="in_K" value="{{data.in_K}}">
-                            </div>               
-                        </div>
-                    </div>
-                </div>
-                <div class="col box">
-                    <img src="/images/{{data.drawing}}_2.png" alt="Flowers in Chania" width="300">
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">
-                            Outgoing Measurements
-                        </div>
-                        <div class="card-body">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="D">D</span>
                                 <input type="text" class="form-control" id="out_D" name="out_D" value="{{data.out_D}}">
                             </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="E">E</span>
-                                <input type="text" class="form-control" id="out_E" placeholder="(Diameter if Sleeved)" name="out_E" value="{{data.out_E}}">
-                            </div>                            
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="F">F</span>
-                                <input type="text" class="form-control" id="out_F" name="out_F" value="{{data.out_F}}">
-                            </div>                         
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="G">G</span>
-                                <input type="text" class="form-control" id="out_G" name="out_G" value="{{data.out_G}}">
-                            </div>               
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="H">H</span>
-                                <input type="text" class="form-control" id="out_H" name="out_H" value="{{data.out_H}}">
-                            </div> 
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="I">I</span>
-                                <input type="text" class="form-control" id="out_I" name="out_I" value="{{data.out_I}}">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="J">J</span>
-                                <input type="text" class="form-control" id="out_J" name="out_J" value="{{data.out_J}}">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="K">K</span>
-                                <input type="text" class="form-control" id="out_K" name="out_K" value="{{data.out_K}}">
-                            </div>   
                         </div>
                     </div>
                 </div>
@@ -198,9 +116,9 @@
 
         <div class="container mt-4">
             <div class="row g-2">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 20rem;">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">1 & 2 Shrink/Screw</li>
+                        <li class="list-group-item">Wartsila 46F Rocker Face</li>
                     </ul>
                 </div>
             </div>
@@ -215,8 +133,110 @@
                         </div>
                         <div class="card-body">
                             <div class="input-group mb-3">
+                                <span class="input-group-text" id="E">E</span>
+                                <input type="text" class="form-control" id="in_E" name="in_E" value="{{data.in_E}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="F">F</span>
+                                <input type="text" class="form-control" id="in_F" name="in_F" value="{{data.in_F}}">
+                            </div>                  
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" style="width: 2cm;" id="Sleeved">Sleeved</span>
+                                <input type="text" class="form-control" id="in_Sleeved" placeholder="Yes / No" name="in_Sleeved" value="{{data.in_Sleeved}}">
+                            </div>                  
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="A1">A1</span>
+                                <input type="text" class="form-control" id="in_A1" placeholder="Yes / No" name="in_A1" value="{{data.in_A1}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="B2">B2</span>
+                                <input type="text" class="form-control" id="in_B2" placeholder="Yes / No" name="in_B2" value="{{data.in_B2}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="C3">C3</span>
+                                <input type="text" class="form-control" id="in_C3" placeholder="Yes / No" name="in_C3" value="{{data.in_C3}}">
+                            </div>  
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="D4">D4</span>
+                                <input type="text" class="form-control" id="in_D4" placeholder="Yes / No" name="in_D4" value="{{data.in_D4}}">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col box">
+                    <img src="/images/{{data.drawing}}_2.png" alt="Flowers in Chania" width="220">
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            Outgoing Measurements
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="E">E</span>
+                                <input type="text" class="form-control" id="out_E" name="out_E" value="{{data.out_E}}">
+                            </div>                            
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="F">F</span>
+                                <input type="text" class="form-control" id="out_F" name="out_F" value="{{data.out_F}}">
+                            </div>                          
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" style="width: 2cm;" id="Sleeved">Sleeved</span>
+                                <input type="text" class="form-control" id="out_Sleeved" placeholder="Yes / No" name="out_Sleeved" value="{{data.out_Sleeved}}">
+                            </div>                   
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="A1">A1</span>
+                                <input type="text" class="form-control" id="out_A1" placeholder="Yes / No" name="out_A1" value="{{data.out_A1}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="B2">B2</span>
+                                <input type="text" class="form-control" id="out_B2" placeholder="Yes / No" name="out_B2" value="{{data.out_B2}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="C3">C3</span>
+                                <input type="text" class="form-control" id="out_C3" placeholder="Yes / No" name="out_C3" value="{{data.out_C3}}">
+                            </div>  
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="D4">D4</span>
+                                <input type="text" class="form-control" id="out_D4" placeholder="Yes / No" name="out_D4" value="{{data.out_D4}}">
+                            </div>             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            Incoming Measurements
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="G">G</span>
+                                <input type="text" class="form-control" id="in_G" placeholder="Left Hand" name="in_G" value="{{data.in_G}}">
+                            </div>     
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="H">H</span>
+                                <input type="text" class="form-control" id="in_H" placeholder="Right Hand" name="in_H" value="{{data.in_H}}">
+                            </div>  
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="I">I</span>
+                                <input type="text" class="form-control" id="in_I" placeholder="Left Hand" name="in_I" value="{{data.in_I}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="J">J</span>
+                                <input type="text" class="form-control" id="in_J" placeholder="Right Hand" name="in_J" value="{{data.in_J}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="K">K</span>
+                                <input type="text" class="form-control" id="in_K" placeholder="Left Hand" name="in_K" value="{{data.in_K}}">
+                            </div>               
+                            <div class="input-group mb-3">
                                 <span class="input-group-text" id="L">L</span>
-                                <input type="text" class="form-control" id="in_L" name="in_L" value="{{data.in_L}}">
+                                <input type="text" class="form-control" id="in_L" placeholder="Right Hand" name="in_L" value="{{data.in_L}}">
                             </div>   
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="M">M</span>
@@ -234,6 +254,14 @@
                                 <span class="input-group-text" id="Q">Q</span>
                                 <input type="text" class="form-control" id="in_Q" name="in_Q" value="{{data.in_Q}}">
                             </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="R1">R1</span>
+                                <input type="text" class="form-control" id="in_R1" placeholder="Front" name="in_R1" value="{{data.in_R1}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="R2">R2</span>
+                                <input type="text" class="form-control" id="in_R2" placeholder="Back" name="in_R2" value="{{data.in_R2}}">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,8 +275,28 @@
                         </div>
                         <div class="card-body">
                             <div class="input-group mb-3">
+                                <span class="input-group-text" id="G">G</span>
+                                <input type="text" class="form-control" id="out_G" placeholder="Left Hand" name="out_G" value="{{data.out_G}}">
+                            </div>               
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="H">H</span>
+                                <input type="text" class="form-control" id="out_H" placeholder="Right Hand" name="out_H" value="{{data.out_H}}">
+                            </div> 
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="I">I</span>
+                                <input type="text" class="form-control" id="out_I" placeholder="Left Hand" name="out_I" value="{{data.out_I}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="J">J</span>
+                                <input type="text" class="form-control" id="out_J" placeholder="Right Hand" name="out_J" value="{{data.out_J}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="K">K</span>
+                                <input type="text" class="form-control" id="out_K" placeholder="Left Hand" name="out_K" value="{{data.out_K}}">
+                            </div>   
+                            <div class="input-group mb-3">
                                 <span class="input-group-text" id="L">L</span>
-                                <input type="text" class="form-control" id="out_L" name="out_L" value="{{data.out_L}}">
+                                <input type="text" class="form-control" id="out_L" placeholder="Right Hand" name="out_L" value="{{data.out_L}}">
                             </div>        
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="M">M</span>
@@ -266,21 +314,16 @@
                                 <span class="input-group-text" id="Q">Q</span>
                                 <input type="text" class="form-control" id="out_Q" name="out_Q" value="{{data.out_Q}}">
                             </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="R1">R1</span>
+                                <input type="text" class="form-control" id="out_R1" placeholder="Front" name="out_R1" value="{{data.out_R1}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="R2">R2</span>
+                                <input type="text" class="form-control" id="out_R2" placeholder="Back" name="out_R2" value="{{data.out_R2}}">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mt-4">
-            <div class="row g-2">
-                <div class="card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">M32 STD/+0.5mm/+1.0mm O/S</li>
-                        <li class="list-group-item">M43 52x2 OR 56x2 O/S</li>
-                        <li class="list-group-item">M25 40mm or 35mm Shrink</li>
-                        <li class="list-group-item">M25 M30x2 or M38x2</li>
-                    </ul>
                 </div>
             </div>
         </div>

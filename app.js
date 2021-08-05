@@ -24,12 +24,12 @@ app.get('/', (request, response) => {
 });
 
 app.post('/drawing', (request, response) => {
-    //{ workorder, drawing } = request.body;
+
     workorder = request.body.workorder;
     drawing = request.body.drawing;
 
     if (workorder !== '' && drawing !== 'Select drawing') {
-        let filename = `./data/${workorder}.txt`;
+        let filename = `./data/${workorder}_${drawing}.json`;
 
         if (!fs.existsSync(filename)) {
             response.render(`drawings/${drawing}`, {
@@ -51,12 +51,15 @@ app.post('/drawing', (request, response) => {
 app.post('/submit', (request, response) => {
     if (typeof(workorder) !== 'undefined' || typeof(drawing) !== 'undefined') {
         let jsonData = JSON.stringify(request.body);
-        fs.writeFileSync(`./data/${workorder}.txt`, jsonData, (error) => {
+        fs.writeFileSync(`./data/${workorder}_${drawing}.json`, jsonData, (error) => {
             if (error) {
                 console.log(error);
             }
         });
-        response.send('Successfully submitted');
+        response.render('index', {
+            color: 'alert-success',
+            message: 'Sucessfully submitted.!!'
+        });
     } else {
         response.render('index');
     }

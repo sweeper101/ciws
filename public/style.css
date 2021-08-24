@@ -77,3 +77,8 @@ div {
   .col.box {
     padding: 15px;
  }
+
+ textarea {
+    resize: none;
+    overflow: hidden;
+}
